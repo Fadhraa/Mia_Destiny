@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peta Karya — Platform UMKM Indonesia</title>
+    <meta
+      name="description"
+      content="Peta Karya mempertemukan UMKM unggulan Indonesia dengan pelanggan digital melalui katalog interaktif yang ramah pengguna."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">Peta Karya</div>
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#umkm">UMKM</a></li>
+          <li><a href="#kolaborasi">Kolaborasi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+      <div class="hero__video">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://cdn.coverr.co/videos/coverr-workers-organizing-coffee-bags-7822/1080p.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content" data-aos="fade-up" data-aos-delay="100">
+        <p class="eyebrow">Platform UMKM Indonesia</p>
+        <h1>Peta Karya menghubungkan talenta lokal dengan peluang digital.</h1>
+        <p>
+          Jelajahi lebih dari 10 UMKM pilihan yang menghadirkan produk autentik, inovasi berkelanjutan,
+          dan cerita inspiratif dari berbagai penjuru Nusantara.
+        </p>
+        <div class="cta-group">
+          <a href="#umkm" class="btn btn-primary">Jelajahi UMKM</a>
+          <a href="#kolaborasi" class="btn btn-outline">Ajak Kolaborasi</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="umkm">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Kurasi Lokal</span>
+          <h2>UMKM Unggulan di Peta Karya</h2>
+          <p>
+            Setiap pelaku usaha membawa identitas budaya, keahlian, dan fokus pada kualitas. Temukan produk
+            favoritmu, pahami perjalanan mereka, dan dukung pertumbuhan ekonomi lokal.
+          </p>
+        </div>
+
+        <div class="filters" data-aos="fade-up" data-aos-delay="100">
+          <input type="text" id="searchUMKM" placeholder="Cari UMKM, produk, atau lokasi..." />
+          <button class="active" data-filter="all">Semua</button>
+          <button data-filter="kuliner">Kuliner</button>
+          <button data-filter="fashion">Fashion</button>
+          <button data-filter="kriya">Kriya</button>
+          <button data-filter="lifestyle">Lifestyle</button>
+        </div>
+
+        <div class="umkm-grid" id="umkmGrid" data-aos="fade-up" data-aos-delay="150"></div>
+      </section>
+
+      <section id="kolaborasi">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Kolaborasi</span>
+          <h2>Bangun dampak yang lebih luas</h2>
+          <p>
+            Peta Karya membuka jalur distribusi, akses mentoring, dan kampanye pemasaran kolaboratif agar UMKM
+            dapat naik kelas dan menjangkau pasar digital.
+          </p>
+        </div>
+
+        <div class="insight-panel">
+          <div class="insight-card" data-aos="fade-up" data-aos-delay="0">
+            <h3>+120</h3>
+            <p>Kolaborasi brand & komunitas sepanjang 2024</p>
+          </div>
+          <div class="insight-card" data-aos="fade-up" data-aos-delay="80">
+            <h3>18 Kota</h3>
+            <p>Jaringan distribusi aktif Peta Karya</p>
+          </div>
+          <div class="insight-card" data-aos="fade-up" data-aos-delay="160">
+            <h3>96%</h3>
+            <p>Mitra merasakan peningkatan penjualan online</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contact">
+          <div class="contact-description" data-aos="fade-right">
+            <span class="eyebrow">Mulai sekarang</span>
+            <h2>Siap menyapa jutaan pelanggan digital?</h2>
+            <p>
+              Tim kami membantu branding, pengemasan, hingga akses modal mikro. Bergabunglah dan bertumbuh
+              bersama UMKM inspiratif lainnya.
+            </p>
+          </div>
+          <div class="contact-card" data-aos="fade-left" data-aos-delay="100">
+            <h3>Hubungi tim Peta Karya</h3>
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">halo@petakarya.id</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">+62 812-3456-7890</span>
+            </div>
+            <a class="btn btn-primary" href="mailto:halo@petakarya.id">Kirim Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer data-aos="fade-up" data-aos-offset="40">
+      &copy; <span id="year"></span> Peta Karya. Mendukung UMKM Indonesia.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
