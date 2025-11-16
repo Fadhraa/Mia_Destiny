@@ -5,8 +5,8 @@ const umkmData = [
     category: 'kuliner',
     description:
       'menawarkan donat dengan varian toping yang beragam dan memiliki cita rasa yang khas.',
-    location: 'Wonogiri, Jawa Tengah',
-    products: ['Donat tradisional', 'Donat kering', 'Donat lembut'],
+    location: 'Surabaya, Jawa Timur',
+    products: ['Donat Coklat Keju', 'Donat Oreo Tiramisu', 'Donat Oreo Matcha', 'Donat Candy', 'Donat Selai Kacang'],
   },
   {
     slug: 'kedai-gus-aab',
@@ -161,3 +161,4 @@ window.addEventListener('scroll', () => {
 });
 
 renderCards(umkmData);
+
